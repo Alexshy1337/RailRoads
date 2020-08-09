@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="test">
+    <output-path>$PROJECT_DIR$/out/artifacts/test</output-path>
+    <root id="root">
+      <element id="directory" name="webapp">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="RailRoads" />
+          </element>
+          <element id="directory" name="libs">
+            <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          </element>
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
