@@ -31,14 +31,14 @@ public class DBTrainStore {
         if(params.get(keys[0]).isEmpty() || params.get(keys[0])==null)
             query.append("NULL");
         else
-            query.append(params.get(keys[0]));
+            query.append("'").append(params.get(keys[0])).append("'");
 
         for(int i = 1; i < keys.length; i++)
         {
-            if(params.get(keys[i]).isEmpty() || params.get(keys[i])==null)
+            if(params.get(keys[i]).isEmpty() || params.get(keys[i])==null || params.get(keys[i]).equals("NULL"))
                 query.append(",").append("NULL");
             else
-                query.append(",").append(params.get(keys[i]));
+                query.append(",").append("'").append(params.get(keys[i])).append("'");
         }
         query.append(")");
         //System.out.println(query);
