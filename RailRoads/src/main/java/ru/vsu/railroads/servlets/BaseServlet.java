@@ -15,6 +15,7 @@ public class BaseServlet extends HttpServlet {
                 callMethod(method, request, response);
             }
         } catch (Exception e) {
+            e.printStackTrace();
             request.getRequestDispatcher("/WEB-INF/views/errors/404.jsp").forward(request, response);
         }
     }
@@ -27,6 +28,7 @@ public class BaseServlet extends HttpServlet {
                 callMethod(method, request, response);
             }
         } catch (Exception e) {
+            e.printStackTrace();
             request.getRequestDispatcher("/WEB-INF/views/errors/404.jsp").forward(request, response);
         }
     }

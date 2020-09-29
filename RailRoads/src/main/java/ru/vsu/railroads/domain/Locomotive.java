@@ -3,8 +3,9 @@ package ru.vsu.railroads.domain;
 import java.util.Objects;
 
 public class Locomotive {
-    private Long id, trainId;
-    private int power;
+    private Long power, id, trainId;
+
+    public Locomotive(){}
 
     public Long getId() {
         return id;
@@ -14,11 +15,11 @@ public class Locomotive {
         this.id = id;
     }
 
-    public int getPower() {
+    public Long getPower() {
         return power;
     }
 
-    public void setPower(int power) {
+    public void setPower(Long power) {
         this.power = power;
     }
 
@@ -32,6 +33,10 @@ public class Locomotive {
 
     public Locomotive(Long id) {
         this.id = id;
+    }
+
+    public Locomotive(Long id, Long power) {
+        this.id = id; this.power = power;
     }
 
     @Override

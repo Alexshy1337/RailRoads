@@ -3,25 +3,42 @@ package ru.vsu.railroads.domain;
 import java.util.Objects;
 
 public class Route {
-    private Long id, trainId;
+    private Long id;
+    private String stations, arrivalTime, waitTime;
+    public Route() {}
+    public Route(Long id) {
+        this.id = id;
+    }
+
+    public String getStations() {
+        return stations;
+    }
+
+    public void setStations(String stations) {
+        this.stations = stations;
+    }
+
+    public String getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public void setArrivalTime(String arrivalTime) {
+        this.arrivalTime = arrivalTime;
+    }
+
+    public String getWaitTime() {
+        return waitTime;
+    }
+
+    public void setWaitTime(String waitTime) {
+        this.waitTime = waitTime;
+    }
 
     public Long getId() {
         return id;
     }
 
     public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getTrainId() {
-        return trainId;
-    }
-
-    public void setTrainId(Long trainId) {
-        this.trainId = trainId;
-    }
-
-    public Route(Long id) {
         this.id = id;
     }
 

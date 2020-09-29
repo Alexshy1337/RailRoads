@@ -1,10 +1,7 @@
 package ru.vsu.railroads.view;
 
-import ru.vsu.railroads.service.TrainService;
-import java.util.Map;
-
 public class TrainView {
-    private TrainService trainService = new TrainService();
+    /*private TrainService trainService = new TrainService();
 
     public <T> void createItem(String curClass, Map<String, String> params) {
         if(trainService.create(curClass, params))
@@ -26,5 +23,5 @@ public class TrainView {
     }
 
     public <T> void deleteItem(Class<T> curClass, Long id) {
-    }
+    }*/
 }

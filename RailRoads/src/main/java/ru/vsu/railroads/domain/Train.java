@@ -2,13 +2,28 @@ package ru.vsu.railroads.domain;
 
 import java.util.Objects;
 
-public class Train { private Long id;
+public class Train {
+
+    private Long id, routeId;
 
     public Train() {
     }
 
     public Train(Long id) {
         this.id = id;
+    }
+
+    public Train(Long id, Long routeId) {
+        this.id = id;
+        this.routeId = routeId;
+    }
+
+    public Long getRouteId() {
+        return routeId;
+    }
+
+    public void setRouteId(Long routeId) {
+        this.routeId = routeId;
     }
 
     public Long getId() {

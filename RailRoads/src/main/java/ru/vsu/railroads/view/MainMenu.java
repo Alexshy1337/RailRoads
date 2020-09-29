@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class MainMenu {
-    private Scanner in = new Scanner(System.in);
+/*    private Scanner in = new Scanner(System.in);
     private TrainView trainView = new TrainView();
 
     public void run() {
@@ -26,7 +26,7 @@ public class MainMenu {
                 case 1:
                     show();
                     break;
-/*                case 2:
+                case 2:
                     trainView.readItems(Route.class);
                     break;
                 case 3:
@@ -35,7 +35,7 @@ public class MainMenu {
                 case 4:
                     trainView.readItems(PassengerWagon.class);
                     break;
-*/
+
                 case 0:
                     System.exit(0);
                     break;
@@ -123,5 +123,5 @@ public class MainMenu {
                     break;
             }
         }
-    }
+    }*/
 }

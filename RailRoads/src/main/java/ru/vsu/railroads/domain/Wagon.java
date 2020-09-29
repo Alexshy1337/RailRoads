@@ -5,6 +5,10 @@ import java.util.Objects;
 public class Wagon {
 
     private Long id, trainId;
+    public Wagon() {}
+    public Wagon(Long id) {
+        this.id = id;
+    }
 
     public Long getTrainId() {
         return trainId;
@@ -20,13 +24,6 @@ public class Wagon {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Wagon(Long id) {
-        this.id = id;
-    }
-
-    public Wagon() {
     }
 
     @Override
